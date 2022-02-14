@@ -4,7 +4,11 @@ const Layout: React.FC = ({ children }) => {
   useEffect(() => {
     console.log('count', count)
   }, [])
-  return <div className={styles.container}>{children}</div>
+  return <div className={styles.container}>
+    <button onClick={() => setCount(x => x+1)}>+</button>
+    {count}
+    {children}
+  </div>
 }
 
 export default Layout

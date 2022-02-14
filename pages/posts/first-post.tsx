@@ -1,9 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import Layout from '@/components/layout'
 const FirstPost: React.FC = () => {
   return (
-    <Layout>
+    <>
       <Head>
         <title>First Post</title>
       </Head>
@@ -13,7 +12,7 @@ const FirstPost: React.FC = () => {
           <a>Back to home</a>
         </Link>
       </h2>
-    </Layout>
+    </>
   )
 }
 
